@@ -21,10 +21,10 @@ class SendMail {
 
             // Set up SMTP server settings (replace with your own)
             $mail->isSMTP();
-            $mail->Host       = 'mail.afripos.co.ke'; // Your SMTP server host (remove the space at the end)
+            $mail->Host       = ''; // Your SMTP server host (remove the space at the end)
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'info@afripos.co.ke'; // Your SMTP username
-            $mail->Password   = 'Afripos@123!'; // Your SMTP password
+            $mail->Username   = ''; // Your SMTP username
+            $mail->Password   = ''; // Your SMTP password
 
             // You should use tls or ssl, not both. Choose the appropriate one based on your server's configuration.
             $mail->SMTPSecure = 'ssl'; // Use 'tls' or 'ssl', but not both
@@ -38,7 +38,7 @@ class SendMail {
             $message = $_POST["message"];
 
             // Recipient's email address
-            $to = "info@afripos.co.ke"; // Replace with your recipient's email address
+            $to = ""; // Replace with your recipient's email address
 
             // Subject of the email
             $email_subject = "Contact Form Submission: $subject";
